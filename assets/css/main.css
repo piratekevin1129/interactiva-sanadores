@@ -5,6 +5,7 @@ html,body{
     padding: 0px;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #container{
@@ -19,8 +20,10 @@ html,body{
 #header{
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -37,22 +40,23 @@ html,body{
     position: relative;
     display: block;
     box-sizing: border-box;
-    padding: 10px 50px;
     margin: 0px;
     padding: 0px;
     
-    font-size: 24px;
+    font-size: 21px;
+    text-align: center;
     font-weight: normal;
     line-height: normal;
 }
 #title h1{
+    padding: 5px 30px;
     font-family: 'Graphik-Bold';
     background-color: #ff0021;
     color: #ffffff;
 }
 #title h2{
     font-family: 'Graphik-Medium';
-    margin: 7px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
     color: #001841;
 }
 
@@ -60,9 +64,11 @@ html,body{
     position: relative;
     width: auto;
     display: flex;
+    align-items: center;
 }
 #instrucciones img{
     display: block;
+    width: 30px;
     margin-right: 10px;
 }
 #instrucciones p{
@@ -71,7 +77,7 @@ html,body{
     padding: 0px;
 
     font-family: 'Graphik-Regular';
-    font-size: 18px;
+    font-size: 14px;
     color: #4c4c4c;
     font-weight: normal;
     line-height: normal;
@@ -81,8 +87,8 @@ html,body{
     position: relative;
     width: 100%;
     height: auto;
-    height: calc(100% - 100px);
-    height: -moz-calc(100% - 100px);
+    height: calc(100% - 150px);
+    height: -moz-calc(100% - 150px);
 }
 
 #col{
@@ -95,7 +101,7 @@ html,body{
 
 #col-rueda{
     position: relative;
-    width: 800px;
+    width: 1000px;
     height: 100%;
 }
 #col-rueda-title{
@@ -116,25 +122,33 @@ html,body{
 
 .rueda-5{
     position: absolute;
-    width: 800px;
-    height: 800px;
+    width: 1000px;
+    height: 1000px;
     top: 100%;
-    top: calc(100% - (400px + 20px));
-    top: -moz-calc(100% - (400px + 20px));
+    top: calc(100% - (500px + 10px));
+    top: -moz-calc(100% - (500px + 10px));
     left: 0px;
 }
 .rueda-nivel0{
     position: absolute;
     width: 100%;
-    width: calc(100% - 100px);
-    width: -moz-calc(100% - 100px);
-    height: 100%;
-    height: calc(100% - 100px);
-    height: -moz-calc(100% - 100px);
+    height: 50%;
+    height: calc(50% - 10px);
+    height: -moz-calc(50% - 10px);
+    
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+.rueda-borde{
+    position: relative;
+    width: 850px;
+    height: 850px;
+    
     box-sizing: border-box;
-    border: #00205c solid 10px;
-    left: 50px;
-    top: 50px;
+    border: #00205c solid 12px;
+    left: 75px;
+    top: 75px;
     border-radius: 50%;
 }
 
@@ -149,6 +163,8 @@ html,body{
     position: absolute;
     height: 100%;
     top: 0%;
+    box-sizing: border-box;
+    padding: 0px 10px;
     transform-origin: center center;
 }
 
@@ -169,9 +185,9 @@ html,body{
 .rueda-pilar-imagen > img:last-child{
     position: absolute;
     display: block;
-    width: 40%;
+    width: 25%;
     height: auto;
-    left: 30%;
+    left: 37.5%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -179,20 +195,26 @@ html,body{
 /***************/
 .rueda-imagen{
     position: absolute;
-    width: 600px;
-    height: 600px;
-    left: 100px;
-    top: 100%;
-    top: calc(100% - (300px + 20px));
-    top: -moz-calc(100% - (300px + 20px));
+    width: 680px;
+    left: 50%;
+    left: calc(50% - 340px);
+    left: -moz-calc(50% - 340px);
+
+    height: 325px;
+    bottom: 50%;
+    bottom: calc(50% + 10px);
+    bottom: -moz-calc(50% + 10px);
+    
+    overflow: hidden;
 }
 
 #rueda-imagen-wrap{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 650px;
+
     transform-origin: center center;
-    border: 50%;
+    border-radius: 50%;
     overflow: hidden;
 }
 #rueda-imagen-wrap-1,
@@ -242,12 +264,13 @@ html,body{
     line-height: normal;
 }
 
+/***************/
 
 #col-ruleta{
     position: relative;
     width: auto;
-    width: calc(100% - 800px);
-    width: -moz-calc(100% - 800px);
+    width: calc(100% - 1000px);
+    width: -moz-calc(100% - 1000px);
     height: 100%;
 }
 #ruleta-imagen{
@@ -267,12 +290,14 @@ html,body{
 }
 #ruleta-aguja{
     position: absolute;
-    width: 60px;
-    height: 200px;
     top: 50%;
-    top: calc(50% - 100px);
-    top: -moz-calc(50% - 100px);
     left: 100%;
-    left: calc(100% - 30px);
-    left: -moz-calc(100% - 30px);
+
+    transform: translate(-50%, 86%);
+}
+#ruleta-aguja img{
+    display: block;
+    position: relative;
+    height: 200px;
+    width: auto;
 }

@@ -1,21 +1,21 @@
 .rueda-5 .rueda-pilar{
-    width: 200px;
+    width: 300px;
     left: 50%;
-    left: calc(50% - 100px);
-    left: -moz-calc(50% - 100px);
+    left: calc(50% - 150px);
+    left: -moz-calc(50% - 150px);
 }
 .rueda-5 .rueda-pilar:nth-child(3){
     transform: rotate(0deg);
 }
 .rueda-5 .rueda-pilar:nth-child(2){
-    transform: rotate(-72deg);
+    transform: rotate(-36deg);
 }
 .rueda-5 .rueda-pilar:nth-child(4){
-    transform: rotate(72deg);
+    transform: rotate(36deg);
 }
 .rueda-5 .rueda-pilar:nth-child(1){
-    transform: rotate(-144deg);
+    transform: rotate(-72deg);
 }
 .rueda-5 .rueda-pilar:nth-child(5){
-    transform: rotate(144deg);
+    transform: rotate(72deg);
 }
