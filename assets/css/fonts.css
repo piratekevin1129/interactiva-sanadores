@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "FSJoey-Bold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/FSJoey-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Graphik-Bold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Graphik-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Graphik-Medium";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Graphik-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Graphik-Regular";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Graphik-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Graphik-Semibold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Graphik-Semibold.ttf") format('truetype');
+}

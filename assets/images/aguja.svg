@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 90 300" style="enable-background:new 0 0 90 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:#BCBCBC;}
+</style>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13401.4434" y1="-6084.438" x2="13288.8984" y2="-6084.438" gradientTransform="matrix(1 -2.956658e-003 2.956658e-003 1 -13285.2441 6273.6514)">
+			<stop  offset="0" style="stop-color:#C5C5C5"/>
+			<stop  offset="1" style="stop-color:#E5E5E5"/>
+		</linearGradient>
+		<path class="st0" d="M2.7,257.8C2.6,234.5,37.4,0,45,0c7.2,0,42.2,234.2,42.3,257.6c0.1,23.4-18.8,42.4-42.2,42.4
+			C21.8,300.1,2.8,281.2,2.7,257.8z"/>
+	</g>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13362.8965" y1="-5962.3188" x2="13335.335" y2="-5989.8804" gradientTransform="matrix(1 -2.956658e-003 2.956658e-003 1 -13285.2441 6273.6514)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.3869" style="stop-color:#ECECEC"/>
+		<stop  offset="1" style="stop-color:#C5C5C5"/>
+	</linearGradient>
+	<circle class="st1" cx="45" cy="257.7" r="20.5"/>
+	
+		<ellipse transform="matrix(1 -2.978084e-003 2.978084e-003 1 -0.7672 0.1352)" class="st2" cx="45" cy="257.7" rx="11.3" ry="11.3"/>
+</g>
+</svg>

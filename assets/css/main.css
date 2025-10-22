@@ -1,0 +1,219 @@
+html,body{
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#title{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+#title h1,
+#title h2{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    margin: 0px;
+    padding: 0px;
+    
+    font-size: 24px;
+    font-weight: normal;
+    line-height: normal;
+}
+#title h1{
+    font-family: 'Graphik-Bold';
+    background-color: #ff0021;
+    color: #ffffff;
+}
+#title h2{
+    font-family: 'Graphik-Medium';
+    margin: 7px 0px 10px 0px;
+    color: #001841;
+}
+
+#instrucciones{
+    position: relative;
+    width: auto;
+    display: flex;
+}
+#instrucciones img{
+    display: block;
+    margin-right: 10px;
+}
+#instrucciones p{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Graphik-Regular';
+    font-size: 18px;
+    color: #4c4c4c;
+    font-weight: normal;
+    line-height: normal;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+}
+
+#col{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#col-rueda1{
+    position: relative;
+    width: 800px;
+    height: 100%;
+}
+#col-rueda1-title{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 20px;
+
+    font-family: 'Graphik-Semibold';
+    font-size: 16px;
+    color: #00205c;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.rueda1-5{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 100%;
+    top: calc(100% - (400px + 20px));
+    top: -moz-calc(100% - (400px + 20px));
+    left: 0px;
+}
+.rueda1-nivel0{
+    position: absolute;
+    width: 100%;
+    width: calc(100% - 100px);
+    width: -moz-calc(100% - 100px);
+    height: 100%;
+    height: calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    box-sizing: border-box;
+    border: #00205c solid 10px;
+    left: 50px;
+    top: 50px;
+    border-radius: 50%;
+}
+
+.rueda1-nivel1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.rueda1-pilar{
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    transform-origin: center center;
+}
+
+
+.rueda1-pilar-imagen{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.rueda1-pilar-imagen > img:first-child{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.rueda1-pilar-imagen > img:last-child{
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: auto;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/***************/
+.rueda1-imagen{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 100px;
+    top: 100%;
+    top: calc(100% - (300px + 20px));
+    top: -moz-calc(100% - (300px + 20px));
+}
+
+#rueda1-imagen-wrap{
+    
+}
+                                <div id="rueda1-imagen-wrap-1">
+                                    <div class="rueda1-imagen-wrap-img"></div>
+                                    <div class="rueda1-imagen-wrap-description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div id="rueda1-imagen-wrap-2">
+                                    <div class="rueda1-imagen-wrap-img"></div>
+                                    <div class="rueda1-imagen-wrap-description">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="col-rueda2">
+                    <div id="rueda2-imagen">
+                        <div id="rueda2-img"></div>
+                        <div id="rueda2-aguja"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
