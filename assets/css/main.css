@@ -93,12 +93,12 @@ html,body{
     flex-wrap: wrap;
 }
 
-#col-rueda1{
+#col-rueda{
     position: relative;
     width: 800px;
     height: 100%;
 }
-#col-rueda1-title{
+#col-rueda-title{
     position: relative;
     display: block;
     width: 100%;
@@ -114,7 +114,7 @@ html,body{
     line-height: normal;
 }
 
-.rueda1-5{
+.rueda-5{
     position: absolute;
     width: 800px;
     height: 800px;
@@ -123,7 +123,7 @@ html,body{
     top: -moz-calc(100% - (400px + 20px));
     left: 0px;
 }
-.rueda1-nivel0{
+.rueda-nivel0{
     position: absolute;
     width: 100%;
     width: calc(100% - 100px);
@@ -138,14 +138,14 @@ html,body{
     border-radius: 50%;
 }
 
-.rueda1-nivel1{
+.rueda-nivel1{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
 }
-.rueda1-pilar{
+.rueda-pilar{
     position: absolute;
     height: 100%;
     top: 0%;
@@ -153,20 +153,20 @@ html,body{
 }
 
 
-.rueda1-pilar-imagen{
+.rueda-pilar-imagen{
     position: relative;
     width: 100%;
     height: auto;
     margin: 0px;
 }
-.rueda1-pilar-imagen > img:first-child{
+.rueda-pilar-imagen > img:first-child{
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     margin: 0px;
 }
-.rueda1-pilar-imagen > img:last-child{
+.rueda-pilar-imagen > img:last-child{
     position: absolute;
     display: block;
     width: 40%;
@@ -177,7 +177,7 @@ html,body{
 }
 
 /***************/
-.rueda1-imagen{
+.rueda-imagen{
     position: absolute;
     width: 600px;
     height: 600px;
@@ -187,7 +187,7 @@ html,body{
     top: -moz-calc(100% - (300px + 20px));
 }
 
-#rueda1-imagen-wrap{
+#rueda-imagen-wrap{
     position: relative;
     width: 100%;
     height: 100%;
@@ -195,35 +195,84 @@ html,body{
     border: 50%;
     overflow: hidden;
 }
-#rueda1-imagen-wrap-1,
-#rueda1-imagen-wrap-2{
+#rueda-imagen-wrap-1,
+#rueda-imagen-wrap-2{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    transform-origin: center center;
+}
+.rueda-imagen-wrap-1-visible{transform: rotate(0deg);}
+.rueda-imagen-wrap-1-invisible{transform: rotate(180deg);}
+.rueda-imagen-wrap-2-invisible{transform: rotate(180deg);}
+.rueda-imagen-wrap-2-visible{transform: rotate(360deg);}
+
+.rueda-imagen-wrap-img{
+    position: relative;
     width: 100%;
     height: 50%;
 }
-                                    <div class="rueda1-imagen-wrap-img"></div>
-                                    <div class="rueda1-imagen-wrap-description">
-                                        <p></p>
-                                    </div>
-                                </div>
-                                <div id="rueda1-imagen-wrap-2">
-                                    <div class="rueda1-imagen-wrap-img"></div>
-                                    <div class="rueda1-imagen-wrap-description">
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="col-rueda2">
-                    <div id="rueda2-imagen">
-                        <div id="rueda2-img"></div>
-                        <div id="rueda2-aguja"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+.rueda-imagen-wrap-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.rueda-imagen-wrap-description{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    bottom: 50%;
+    left: 0px;
+}
+.rueda-imagen-wrap-description p{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Graphik-Regular';
+    font-size: 14px;
+    color: #00205c;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+}
+
+
+#col-ruleta{
+    position: relative;
+    width: auto;
+    width: calc(100% - 800px);
+    width: -moz-calc(100% - 800px);
+    height: 100%;
+}
+#ruleta-imagen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#ruleta-img{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0px;
+}
+#ruleta-aguja{
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    top: 50%;
+    top: calc(50% - 100px);
+    top: -moz-calc(50% - 100px);
+    left: 100%;
+    left: calc(100% - 30px);
+    left: -moz-calc(100% - 30px);
+}
