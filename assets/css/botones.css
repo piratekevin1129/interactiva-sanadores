@@ -17,12 +17,15 @@
     width: 45px;
     height: 45px;
     border: none;
-    background-color: #f3a500;
+    background-color: #ff0021;
     cursor: pointer;
+}
+#next-tema-btn{
+    margin-right: 10px;
 }
 #next-tema-btn:hover,
 #sonido-btn:hover{
-    background-color: #fcd663;
+    background-color: #dd0025;
 }
 
 #next-tema-btn::after,

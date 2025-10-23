@@ -69,11 +69,11 @@ function loadItem(){
 }
 
 function overArea(a){
-    over_mp3.currentTime = 0
-    over_mp3.play()
     var cont = getE('rueda-nivel1').getElementsByClassName('rueda-pilar')[a-1]
     var imagendiv = cont.getElementsByClassName('rueda-pilar-imagen')[0]
     imagendiv.className = 'rueda-pilar-imagen over'
+    over_mp3.currentTime = 0
+    over_mp3.play()
 }
 
 function outArea(a){
@@ -149,8 +149,7 @@ function clickRuleta(r){
             global_ruleta = r
             getE('ruleta-aguja').style.transform = 'rotate('+rotaciones_aguja[r-1]+'deg)'
             getE('ruleta-aguja-img').className = 'ruleta-aguja-animation'
-            aguja_mp3.play()
-    
+            
             if(!cuadros[global_ruleta-1].loaded){
                 load_item = 0
                 loadItems()
@@ -158,6 +157,7 @@ function clickRuleta(r){
                 setRuleta()
                 setRuleta2()
             }
+            aguja_mp3.play()
         },200)
     }
 }
@@ -199,7 +199,6 @@ function setRuleta2(){
     animating_rueda = false;
     animating_imagen = false;
     audio_global = cuadros[global_ruleta-1].intro
-    console.log(audio_global)
     audio_global.currentTime = 0
     audio_global.play()
 }

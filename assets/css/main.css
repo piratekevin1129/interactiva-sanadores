@@ -184,6 +184,13 @@ html,body{
     height: 100%;
     top: 0px;
     left: 0px;
+    transition: transform 0.5s;
+}
+.rueda-off #rueda-nivel1{
+    transform: rotate(180deg);
+}
+.rueda-on #rueda-nivel1{
+    transform: rotate(0deg);
 }
 
 .rueda-pilar{

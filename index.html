@@ -82,7 +82,7 @@
     </div>
 
     <div id="botones">
-        <button id="next-tema-btn" class="next-tema-off"></button>
+        <button id="next-tema-btn" class="next-tema-on" onclick="clickSiguiente()"></button>
         <button id="sonido-btn" class="sonido-off"></button>
     </div>
 
@@ -128,6 +128,8 @@
                                     //intro_mp3 = data
 
                                     //window.top.postMessage({'completado': false, 'alto': 507}, '*' );
+
+                                    clickRuleta(1)
                                     unsetLoader()
                                     getE('sonido-btn').setAttribute('onclick','clickSonido()')
                                     //intro_mp3.play()
@@ -150,6 +152,10 @@
                 getE('sonido-btn').className = 'sonido-off'
                 background_mp3.pause()
             }
+        }
+
+        function clickSiguiente(){
+            parent.nextTema()
         }
     </script>
 </body>
