@@ -1,4 +1,157 @@
-@media (max-width: 846px){
+@media (min-width: 1542px){
+    #header{
+        height: 200px;
+        padding: 25px;
+    }
+
+    #title h1,
+    #title h2{
+        font-size: 24px;
+    }
+    #title h1{
+        padding: 10px 35px;
+    }
+    #title h2{
+        margin: 10px 0px 10px 0px;
+    }
+
+    #instrucciones img{
+        width: 35px;
+        margin-right: 15px;
+    }
+    #instrucciones p{
+        font-size: 16px;
+    }
+
+    #content{
+        height: auto;
+        height: calc(100% - 200px);
+        height: -moz-calc(100% - 200px);
+    }
+
+    #col-rueda{
+        width: 1200px;
+    }
+    .col-rueda-loading{
+        background-size: 50px;
+    }
+    #col-rueda-title{
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    #rueda{
+        width: 1200px;
+        height: 1200px;
+        top: 100%;
+        top: calc(100% - (600px + 30px));
+        top: -moz-calc(100% - (600px + 30px));
+    }
+
+    .rueda-nivel0,
+    .rueda-nivel2{
+        height: 50%;
+        height: calc(50% - 30px);
+        height: -moz-calc(50% - 30px);
+    }
+    .rueda-borde{
+        width: 1050px;
+        height: 1050px;
+        border: #00205c solid 15px;
+        left: 75px;
+        top: 75px;
+    }
+
+    .rueda-pilar{
+        padding: 0px 15px;
+    }
+
+    .rueda-pilar-imagen > img:last-child{
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        left: calc(50% - 40px);
+        left: -moz-calc(50% - 40px);
+    }
+    
+    .rueda-pilar .over > img:last-child{
+        width: 90px;
+        height: 90px;
+        left: 50%;
+        left: calc(50% - 45px);
+        left: -moz-calc(50% - 45px);
+    }
+
+    .rueda-area{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255,255,255,0);
+    }
+
+    /***************/
+    .rueda-imagen{
+        width: 800px;
+        left: 50%;
+        left: calc(50% - 400px);
+        left: -moz-calc(50% - 400px);
+
+        height: 380px;
+        bottom: 50%;
+        bottom: calc(50% + 30px);
+        bottom: -moz-calc(50% + 30px);
+    }
+
+    #rueda-imagen-wrap{
+        width: 100%;
+        height: 760px;
+    }
+
+    .rueda-imagen-wrap-description{
+        padding: 12px 25px;
+    }
+    .rueda-imagen-wrap-description p{
+        font-size: 16px;
+    }
+
+    /***************/
+
+    #col-ruleta{
+        width: auto;
+        width: calc(100% - 1200px);
+        width: -moz-calc(100% - 1200px);
+        height: 100%;
+    }
+
+    #ruleta-img,
+    #ruleta-numeros{
+        width: 400px;
+        height: 800px;
+    }
+    #ruleta-aguja{
+        width: 90px;
+        height: 300px;
+
+        top: 50%;
+        top: calc(50% - 258px);
+        top: -moz-calc(50% - 258px);
+        left: 100%;
+        left: calc(100% - 45px);
+        left: -moz-calc(100% - 45px);
+    }
+
+    #ruleta-numeros{
+        top: 50%;
+        top: calc(50% - 400px);
+        top: -moz-calc(50% - 400px);
+    }
+    #ruleta-numeros > div{
+        width: 65px;
+        height: 65px;
+        font-size: 70px;
+    }
+}
+
+/*@media (max-width: 846px){
     #botones{
         width: 80px;
         top: 10px;
@@ -44,3 +197,4 @@
     }
 
 }
+*/

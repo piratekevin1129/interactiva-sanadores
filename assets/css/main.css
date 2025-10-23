@@ -374,11 +374,15 @@ html,body{
 #ruleta-img{
     position: relative;
     display: block;
-    width: 300px;
-    height: 600px;
     height: auto;
     margin: 0px;
 }
+#ruleta-img,
+#ruleta-numeros{
+    width: 300px;
+    height: 600px;
+}
+
 #ruleta-aguja{
     position: absolute;
     width: 60px;
@@ -423,8 +427,6 @@ html,body{
 
 #ruleta-numeros{
     position: absolute;
-    width: 300px;
-    height: 600px;
     right: 0px;
     top: 50%;
     top: calc(50% - 300px);
@@ -478,7 +480,3 @@ html,body{
 #ruleta-numeros > div:nth-child(5){top:66%; left:31%;}
 #ruleta-numeros > div:nth-child(6){top:79%; left:54%;}
 #ruleta-numeros > div:nth-child(7){top:85%; left:87%;}
-
-.ruleta-aguja-1{
-
-}

@@ -1,0 +1,37 @@
+@media (min-width: 1542px){
+    /*********************/
+
+    .rueda-5 .rueda-pilar{
+        width: 350px;
+        left: 50%;
+        left: calc(50% - 175px);
+        left: -moz-calc(50% - 175px);
+    }
+
+    /*********************/
+
+    .rueda-7 .rueda-pilar{
+        width: 270px;
+        left: 50%;
+        left: calc(50% - 135px);
+        left: -moz-calc(50% - 135px);
+    }
+
+    /*********************/
+
+    .rueda-8 .rueda-pilar{
+        width: 250px;
+        left: 50%;
+        left: calc(50% - 125px);
+        left: -moz-calc(50% - 125px);
+    }
+
+    /*********************/
+
+    .rueda-9 .rueda-pilar{
+        width: 220px;
+        left: 50%;
+        left: calc(50% - 110px);
+        left: -moz-calc(50% - 110px);
+    }
+}
