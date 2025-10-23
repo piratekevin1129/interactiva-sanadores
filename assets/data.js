@@ -1,25 +1,33 @@
 var cuadros = [
     {
+        title:'Control y prevención de derrames<br> <span>de aceites y otras sustancias</span>',
+        loaded:false,
+        intro:null,
         items:[{
-            foto:'1.png',
+            id:1,
+            foto:null,
             audio:null,
-            descripcion:"Si nos aplica la protección de especies, se debe tener un plan de acción (hecho por profesional ambiental u asociación). Ejemplos de acciones: trasplante de especies, refugio temporal en obra, prohibición de consumo de especies nativas en peligro de extinción, etc"
+            descripcion:"Kits antiderrames disponibles en zonas de riesgo con personal formado y procedimiento de emergencia por contaminación publicado."
         },{
-            foto:'1.png',
+            id:2,
+            foto:null,
             audio:null,
-            descripcion:"Si nos aplica la protección de especies, se debe tener un plan de acción (hecho por profesional ambiental u asociación). Ejemplos de acciones: trasplante de especies, refugio temporal en obra, prohibición de consumo de especies nativas en peligro de extinción, etc"
+            descripcion:"Bandejas de retención (o geotextil) usadas durante mantenimiento de equipos y sistema anti derrame de combustible instalado en puntos de llenado."
         },{
-            foto:'1.png',
+            id:3,
+            foto:null,
             audio:null,
-            descripcion:"Si nos aplica la protección de especies, se debe tener un plan de acción (hecho por profesional ambiental u asociación). Ejemplos de acciones: trasplante de especies, refugio temporal en obra, prohibición de consumo de especies nativas en peligro de extinción, etc"
+            descripcion:"Almacenamiento de materiales y residuos peligrosos: protegidos de la lluvia y sol directo, piso impermeabilizado o con bandejas de retención, fichas de datos de seguridad disponibles in situ, estantes hechos de materiales distintos a la madera, etc."
         },{
-            foto:'1.png',
+            id:4,
+            foto:null,
             audio:null,
-            descripcion:"Si nos aplica la protección de especies, se debe tener un plan de acción (hecho por profesional ambiental u asociación). Ejemplos de acciones: trasplante de especies, refugio temporal en obra, prohibición de consumo de especies nativas en peligro de extinción, etc"
+            descripcion:"Control de niveles de fluidos (alarmas para alertar niveles máximos en tanques o silos) y agitadores en tanques de lodos."
         },{
-            foto:'1.png',
+            id:5,
+            foto:null,
             audio:null,
-            descripcion:"Si nos aplica la protección de especies, se debe tener un plan de acción (hecho por profesional ambiental u asociación). Ejemplos de acciones: trasplante de especies, refugio temporal en obra, prohibición de consumo de especies nativas en peligro de extinción, etc"
+            descripcion:"Procedimiento de comunicación en caso de incidente ambiental grave difundido."
         }]
     }
 ]

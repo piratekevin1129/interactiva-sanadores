@@ -104,13 +104,18 @@ html,body{
     width: 1000px;
     height: 100%;
 }
+.col-rueda-loading{
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    background-image: url(../images/loader.gif);
+}
 #col-rueda-title{
     position: relative;
     display: block;
     width: 100%;
     height: auto;
-    margin: 0px auto;
-    margin-bottom: 20px;
+    margin: 15px auto;
 
     font-family: 'Graphik-Semibold';
     font-size: 16px;
@@ -118,9 +123,20 @@ html,body{
     text-align: center;
     font-weight: normal;
     line-height: normal;
+    transition: opacity 0.5s;
+}
+.col-rueda-title-on{
+    opacity: 1;
+}
+.col-rueda-title-off{
+    opacity: 0;
 }
 
-.rueda-5{
+#col-rueda-title span{
+    font-family: 'Graphik-Regular';
+}
+
+#rueda{
     position: absolute;
     width: 1000px;
     height: 1000px;
@@ -128,8 +144,18 @@ html,body{
     top: calc(100% - (500px + 10px));
     top: -moz-calc(100% - (500px + 10px));
     left: 0px;
+
+    transition: opacity 0.5s;
 }
-.rueda-nivel0{
+.rueda-on{
+    opacity: 1;
+}
+.rueda-off{
+    opacity: 0;
+}
+
+.rueda-nivel0,
+.rueda-nivel2{
     position: absolute;
     width: 100%;
     height: 50%;
@@ -152,13 +178,14 @@ html,body{
     border-radius: 50%;
 }
 
-.rueda-nivel1{
+#rueda-nivel1{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
 }
+
 .rueda-pilar{
     position: absolute;
     height: 100%;
@@ -168,30 +195,76 @@ html,body{
     transform-origin: center center;
 }
 
-
 .rueda-pilar-imagen{
     position: relative;
     width: 100%;
     height: auto;
     margin: 0px;
 }
+
 .rueda-pilar-imagen > img:first-child{
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     margin: 0px;
+
+    transition: filter 0.25s;
 }
 .rueda-pilar-imagen > img:last-child{
     position: absolute;
     display: block;
-    width: 25%;
-    height: auto;
-    left: 37.5%;
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    left: calc(50% - 32px);
+    left: -moz-calc(50% - 32px);
     top: 50%;
-    transform: translateY(-50%);
+
+    transition: width 0.25s, left 0.25s, height 0.25s, filter 0.25s;
+}
+.rueda-pilar-imagen-sombra{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: block;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+
+    transition: opacity 0.25s;
 }
 
+.rueda-pilar .over > img:first-child{
+    filter: brightness(150%);
+}
+.rueda-pilar .over > img:last-child{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    width: 74px;
+    height: 74px;
+    left: 50%;
+    left: calc(50% - 37px);
+    left: -moz-calc(50% - 37px);
+}
+.rueda-pilar .over .rueda-pilar-imagen-sombra{
+    opacity: 1;
+}
+
+
+#rueda-areas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.rueda-area{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0);
+    transform: translate(-50%, -50%);
+}
 /***************/
 .rueda-imagen{
     position: absolute;
@@ -225,10 +298,20 @@ html,body{
     left: 0px;
     transform-origin: center center;
 }
-.rueda-imagen-wrap-1-visible{transform: rotate(0deg);}
-.rueda-imagen-wrap-1-invisible{transform: rotate(180deg);}
-.rueda-imagen-wrap-2-invisible{transform: rotate(180deg);}
-.rueda-imagen-wrap-2-visible{transform: rotate(360deg);}
+.rueda-imagen-wrap-1-visible{
+    transform: rotate(0deg);
+}
+.rueda-imagen-wrap-1-invisible{
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.rueda-imagen-wrap-2-invisible{
+    transform: rotate(180deg);
+}
+.rueda-imagen-wrap-2-visible{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
 
 .rueda-imagen-wrap-img{
     position: relative;
@@ -285,19 +368,109 @@ html,body{
     position: relative;
     display: block;
     width: 300px;
+    height: 600px;
     height: auto;
     margin: 0px;
 }
 #ruleta-aguja{
     position: absolute;
-    top: 50%;
-    left: 100%;
+    width: 60px;
+    height: 200px;
 
-    transform: translate(-50%, 86%);
+    top: 50%;
+    top: calc(50% - 172px);
+    top: -moz-calc(50% - 172px);
+    left: 100%;
+    left: calc(100% - 30px);
+    left: -moz-calc(100% - 30px);
+
+    transform-origin: 50% 86%;
+
+    transition: transform 0.15s ease-in;
 }
-#ruleta-aguja img{
+#ruleta-aguja-img{
     display: block;
     position: relative;
-    height: 200px;
-    width: auto;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 86%;
+}
+.ruleta-aguja-animation{
+    animation: animacion-aguja-mueve 0.25s 0.15s linear 1 forwards;
+}
+@keyframes animacion-aguja-mueve{
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    80%{
+        transform: rotate(3deg);
+    }
+    95%{
+        transform: rotate(-1deg);
+    }
+}
+
+#ruleta-numeros{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    right: 0px;
+    top: 50%;
+    top: calc(50% - 300px);
+    top: -moz-calc(50% - 300px);
+}
+#ruleta-numeros > div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'FSJoey-Bold';
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    transform: translate(-50%, -50%);
+
+    transform-origin: 0% 0%;
+    transition: text-shadow 0.25s;
+}
+
+#ruleta-numeros > div:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(255,255,0,0.8);
+    animation: animacion-numero-hover 0.25s 1 forwards linear;
+}
+@keyframes animacion-numero-hover{
+    0%,100%{
+        transform: scale(1) translate(-50%,-50%);
+    }
+    40%{
+        transform: scale(1.4) translate(-50%,-50%);
+    }
+    80%{
+        transform: scale(0.8) translate(-50%,-50%);
+    }
+    95%{
+        transform: scale(1.1) translate(-50%,-50%);
+    }
+}
+
+#ruleta-numeros > div:nth-child(1){top:13%; left:87%;}
+#ruleta-numeros > div:nth-child(2){top:20%; left:54%;}
+#ruleta-numeros > div:nth-child(3){top:33%; left:31%;}
+#ruleta-numeros > div:nth-child(4){top:49%; left:23%;}
+#ruleta-numeros > div:nth-child(5){top:66%; left:31%;}
+#ruleta-numeros > div:nth-child(6){top:79%; left:54%;}
+#ruleta-numeros > div:nth-child(7){top:85%; left:87%;}
+
+.ruleta-aguja-1{
+
 }

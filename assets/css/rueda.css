@@ -7,15 +7,55 @@
 .rueda-5 .rueda-pilar:nth-child(3){
     transform: rotate(0deg);
 }
+.rueda-5 .rueda-pilar:nth-child(3) .rueda-pilar-imagen img:last-child{
+    transform: translateY(-50%) rotate(0deg);
+}
+
 .rueda-5 .rueda-pilar:nth-child(2){
     transform: rotate(-36deg);
 }
+.rueda-5 .rueda-pilar:nth-child(2) .rueda-pilar-imagen img:last-child{
+    transform: translateY(-50%) rotate(36deg);
+}
+
 .rueda-5 .rueda-pilar:nth-child(4){
     transform: rotate(36deg);
 }
+.rueda-5 .rueda-pilar:nth-child(4) .rueda-pilar-imagen img:last-child{
+    transform: translateY(-50%) rotate(-36deg);
+}
+
 .rueda-5 .rueda-pilar:nth-child(1){
     transform: rotate(-72deg);
 }
+.rueda-5 .rueda-pilar:nth-child(1) .rueda-pilar-imagen img:last-child{
+    transform: translateY(-50%) rotate(72deg);
+}
+
 .rueda-5 .rueda-pilar:nth-child(5){
     transform: rotate(72deg);
+}
+.rueda-5 .rueda-pilar:nth-child(5) .rueda-pilar-imagen img:last-child{
+    transform: translateY(-50%) rotate(-72deg);
+}
+
+.rueda-5 #rueda-areas .rueda-area:nth-child(1){
+    left: 9.7%;
+    top: 76%;
+}
+.rueda-5 #rueda-areas .rueda-area:nth-child(2){
+    left: 25%;
+    top: 32%;
+}
+.rueda-5 #rueda-areas .rueda-area:nth-child(3){
+    left: 50.5%;
+    top: 16%;
+}
+.rueda-5 #rueda-areas .rueda-area:nth-child(4){
+    left: 75%;
+    top: 32%;
+}
+.rueda-5 #rueda-areas .rueda-area:nth-child(5){
+    left: 90.3%;
+    top: 76%;
 }
