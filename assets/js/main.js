@@ -152,6 +152,7 @@ function clickRuleta(r){
             aguja_mp3.play()
     
             if(!cuadros[global_ruleta-1].loaded){
+                load_item = 0
                 loadItems()
             }else{
                 setRuleta()
@@ -205,7 +206,7 @@ function setRuleta2(){
 
 function resetImages(ind){
     var imagen1 = getE('rueda-imagen-wrap-1-img')
-    imagen1.src = "assets/images/cuadro"+global_ruleta+"/1.png"
+    imagen1.src = "assets/images/cuadro"+global_ruleta+"/"+cuadros[global_ruleta-1].items[ind].id+".png"
     var descripcion1 =  getE('rueda-imagen-wrap-1-descripcion')
     descripcion1.innerHTML = cuadros[global_ruleta-1].items[ind].descripcion
     getE('rueda-imagen-wrap-1').className = 'rueda-imagen-wrap-1-visible'
