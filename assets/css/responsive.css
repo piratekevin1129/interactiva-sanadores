@@ -151,6 +151,10 @@
     }
 }
 
+@media (max-width: 580px){
+    
+}
+
 /*@media (max-width: 846px){
     #botones{
         width: 80px;
